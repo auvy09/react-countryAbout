@@ -4,12 +4,12 @@ import './Country.css';
 const Country = (props) => {
     const { population, region, name, flags } = props.country;
     return (
-        <div className='country'>
+        <div className='country '>
             <img src={flags.png} alt="" />
-            <h2>country name : {name.common}</h2>
-            <h4>Official Name: {name.official}</h4>
-            <h5>Region: {region}</h5>
-            <h3>Population: {population}</h3>
+            <h4 className='mt-4'>country name : {name.common}</h4>
+            <h5 className='mt-2'>Official Name: {name.official}</h5>
+            <p className='mt-2'>Region: {region}</p>
+            <h4>Population: {population}</h4>
         </div>
     );
 };
